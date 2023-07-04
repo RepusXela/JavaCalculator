@@ -8,6 +8,6 @@ public interface CalcModelInterface {
 	public void divValues();
 	
 	public void clearValue();
-	public void expValue();
+	public void powValue();
 	public void sqrtValue();
 }

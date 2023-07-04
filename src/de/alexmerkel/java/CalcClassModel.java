@@ -65,11 +65,13 @@ public class CalcClassModel implements CalcModelInterface {
 		this.value = "";
 	}
 	@Override
-	public void expValue() {
-		
+	public void powValue() {
+		double val1= Double.valueOf(this.value.replace(',', '.'));
+		this.value = String.valueOf(Math.pow(val1, 2));
 	}
 	@Override
 	public void sqrtValue() {
-		
+		double val1= Double.valueOf(this.value.replace(',', '.'));
+		this.value = String.valueOf(Math.sqrt(val1));
 	}
 }

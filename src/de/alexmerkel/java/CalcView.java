@@ -17,7 +17,7 @@ public class CalcView extends JFrame {
 	private static final long serialVersionUID = 1L;
 	JTextField calcOutput;
 	JButton mc, mr, mPlus, mMinus, ms, m;
-	JButton procent, ce, c, back, oneDivX, exp;
+	JButton procent, ce, c, back, oneDivX, pow;
 	JButton root, divide, seven, eight, nine;
 	JButton four, five, six, one, two, three;
 	JButton muliply, minus, plus, plusMinus, zero;
@@ -60,8 +60,8 @@ public class CalcView extends JFrame {
 		buttonPanel.add(back);
 		oneDivX = new JButton("1/x");
 		buttonPanel.add(oneDivX);
-		exp = new JButton("x^2");
-		buttonPanel.add(exp);
+		pow = new JButton("pow");
+		buttonPanel.add(pow);
 		root = new JButton("sqrt");
 		buttonPanel.add(root);
 		divide = new JButton("/");
@@ -146,7 +146,7 @@ public class CalcView extends JFrame {
 		return oneDivX;
 	}
 	public JButton getExp() {
-		return exp;
+		return pow;
 	}
 	public JButton getRoot() {
 		return root;
@@ -203,7 +203,8 @@ public class CalcView extends JFrame {
 		return equals;
 	}
 	public void setCalcOutput(String calcOutput) {
-		this.calcOutput.setText(calcOutput);
+		
+		this.calcOutput.setText(calcOutput.replace('.', ','));
 	}
 	
 	public Component[] getButtons() {
