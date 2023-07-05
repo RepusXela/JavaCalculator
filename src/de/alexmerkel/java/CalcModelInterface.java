@@ -11,4 +11,5 @@ public interface CalcModelInterface {
 	public void powValue();
 	public void sqrtValue();
 	public void fractValue();
+	public void signValue();
 }

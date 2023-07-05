@@ -49,6 +49,9 @@ public class CalcController implements ActionListener, PropertyChangeListener {
 			} else if(com.matches("1/x")){ 
 				this.model.fractValue();
 				this.view.setCalcOutput(this.model.getValue());
+			} else if(com.matches("sign")){
+				this.model.signValue();
+				this.view.setCalcOutput(this.model.getValue());
 			} else if(com.matches("pow")) {
 				this.model.powValue();
 				this.view.setCalcOutput(this.model.getValue());				

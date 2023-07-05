@@ -79,4 +79,9 @@ public class CalcClassModel implements CalcModelInterface {
 		double val1= Double.valueOf(this.value.replace(',', '.'));
 		this.value = String.valueOf(1/val1);
 	}
+	@Override
+	public void signValue() {
+		double val1= Double.valueOf(this.value.replace(',', '.'));
+		this.value = String.valueOf(-1*val1);
+	}
 }

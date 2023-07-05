@@ -90,7 +90,7 @@ public class CalcView extends JFrame {
 		buttonPanel.add(three);
 		plus = new JButton("+");
 		buttonPanel.add(plus);
-		plusMinus = new JButton("+/-");
+		plusMinus = new JButton("sign");
 		buttonPanel.add(plusMinus);
 		zero = new JButton("0");
 		buttonPanel.add(zero);
@@ -145,7 +145,7 @@ public class CalcView extends JFrame {
 	public JButton getOneDivX() {
 		return oneDivX;
 	}
-	public JButton getExp() {
+	public JButton getPow() {
 		return pow;
 	}
 	public JButton getRoot() {
