@@ -46,6 +46,9 @@ public class CalcController implements ActionListener, PropertyChangeListener {
 				this.view.setCalcOutput(this.model.getValue());
 				SimpleLogger.logInfo("Number is valid: " + Evaluation.evalNumber(this.model.getValue()));
 				SimpleLogger.logInfo(e.getActionCommand());
+			} else if(com.matches("1/x")){ 
+				this.model.fractValue();
+				this.view.setCalcOutput(this.model.getValue());
 			} else if(com.matches("pow")) {
 				this.model.powValue();
 				this.view.setCalcOutput(this.model.getValue());				
